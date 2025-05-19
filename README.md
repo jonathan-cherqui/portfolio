@@ -42,7 +42,7 @@ Formation, support et animation de l’usage quotidien des dashboards par les é
 
 Mise en place de relais internes et de bonnes pratiques pour ancrer une culture data dans le réseau
 
-**Compétences techniques :** Power BI, Power Query, Excel, SQL 
+**Compétences clés :** Power BI, Power Query, Excel, SQL 
 
 
 ###Lead Data | Data Analyst @ Pandacraft (2016 - 2019)
@@ -60,7 +60,7 @@ Coordination des décisions stratégiques et leur traduction en actions opérati
 
 Utilisation quotidienne avancée d’outils tels que Excel, Tableau Desktop, SQL et Power Query pour le traitement et la visualisation des données.Création 
 
-**Compétences techniques :** Tableau, Power Query, Excel, SQL 
+**Compétences clés :** Tableau, Power Query, Excel, SQL 
 
 
 ## Projects
