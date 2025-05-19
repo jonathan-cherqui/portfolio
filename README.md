@@ -9,7 +9,9 @@ Je conçois des outils décisionnels sur-mesure (Power BI), fiabilise les flux d
 🛠 Compétences clés : Power BI, DAX, Power Query, SQL, Excel, Azure Data Factory, modélisation de données, data governance, conduite du changement
 
 
+
 ## Work Experience
+
 
 ### Data Manager & Data Analyst @ ADC Cyclable (2020 - )
 Je pilote les projets data au sein d’un réseau d'environ 80 magasins de vélos. Mon rôle s’articule autour de la structuration des données, de la mise en œuvre de la BI, et de l’adoption des outils data par les équipes terrain.
@@ -45,6 +47,7 @@ Mise en place de relais internes et de bonnes pratiques pour ancrer une culture 
 **Compétences clés :** Power BI, Power Query, Excel, SQL 
 
 
+
 ### Lead Data | Data Analyst @ Pandacraft (2016 - 2019)
 Création et pilotage du pôle Data, structurant la démarche data-driven de l’entreprise.
 
@@ -61,6 +64,7 @@ Coordination des décisions stratégiques et leur traduction en actions opérati
 Utilisation quotidienne avancée d’outils tels que Excel, Tableau Desktop, SQL et Power Query pour le traitement et la visualisation des données.Création 
 
 **Compétences clés :** Tableau, Power Query, Excel, SQL 
+
 
 
 ## Projects
