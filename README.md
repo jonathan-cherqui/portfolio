@@ -45,7 +45,7 @@ Mise en place de relais internes et de bonnes pratiques pour ancrer une culture 
 **Compétences clés :** Power BI, Power Query, Excel, SQL 
 
 
-###Lead Data | Data Analyst @ Pandacraft (2016 - 2019)
+### Lead Data | Data Analyst @ Pandacraft (2016 - 2019)
 Création et pilotage du pôle Data, structurant la démarche data-driven de l’entreprise.
 
 Fourniture d’analyses et recommandations fiables aux équipes produit, marketing et opérationnelles pour orienter les décisions stratégiques.
