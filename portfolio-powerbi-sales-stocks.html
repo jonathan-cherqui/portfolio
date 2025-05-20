@@ -84,28 +84,29 @@ permalink: /portfolio-powerbi-sales-stocks/
   <h2>Principales mesures DAX utilisées</h2>
 
   <div style="position: relative; margin-bottom: 1em;">
-    <button onclick="copyCode(this)" style="
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        background-color: #444;
-        color: white;
-        border: none;
-        padding: 5px 10px;
-        cursor: pointer;
-        font-size: 0.9em;
-        border-radius: 5px;
-    ">
-      Copier
-    </button>
-    <pre style="
-      background-color: #1e1e1e;
-      color: #f8f8f2;
-      padding: 1em;
-      border-radius: 8px;
-      overflow-x: auto;
-      font-family: 'Courier New', monospace;
-    "><code>
+  <button onclick="copyCode(this)" style="
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: #f0f0f0;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 0.9em;
+      border-radius: 5px;
+  ">
+    Copier
+  </button>
+  <pre style="
+    background-color: #fdfdfd;
+    color: #222;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+  "><code>
 Poids sur revenue total = DIVIDE(
     SUM(fSales[Revenue]), // Revenu dans le contexte saisie
     CALCULATE(
@@ -117,28 +118,29 @@ Poids sur revenue total = DIVIDE(
   </div>
 
  <div style="position: relative; margin-bottom: 1em;">
-    <button onclick="copyCode(this)" style="
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        background-color: #444;
-        color: white;
-        border: none;
-        padding: 5px 10px;
-        cursor: pointer;
-        font-size: 0.9em;
-        border-radius: 5px;
-    ">
-      Copier
-    </button>
-    <pre style="
-      background-color: #1e1e1e;
-      color: #f8f8f2;
-      padding: 1em;
-      border-radius: 8px;
-      overflow-x: auto;
-      font-family: 'Courier New', monospace;
-    "><code>
+  <button onclick="copyCode(this)" style="
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: #f0f0f0;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 0.9em;
+      border-radius: 5px;
+  ">
+    Copier
+  </button>
+  <pre style="
+    background-color: #fdfdfd;
+    color: #222;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+  "><code>
 Couverture stock = 
 
 //Moyenne des quantités vendues au cours des 12 deniers mois, de la date maximale sélectionnée
@@ -169,29 +171,30 @@ RETURN _Couverture
   </div>
 
 
-  <div style="position: relative; margin-bottom: 1em;">
-    <button onclick="copyCode(this)" style="
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        background-color: #444;
-        color: white;
-        border: none;
-        padding: 5px 10px;
-        cursor: pointer;
-        font-size: 0.9em;
-        border-radius: 5px;
-    ">
-      Copier
-    </button>
-    <pre style="
-      background-color: #1e1e1e;
-      color: #f8f8f2;
-      padding: 1em;
-      border-radius: 8px;
-      overflow-x: auto;
-      font-family: 'Courier New', monospace;
-    "><code>
+<div style="position: relative; margin-bottom: 1em;">
+  <button onclick="copyCode(this)" style="
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: #f0f0f0;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 0.9em;
+      border-radius: 5px;
+  ">
+    Copier
+  </button>
+  <pre style="
+    background-color: #fdfdfd;
+    color: #222;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+  "><code>
 Qte surstock = CALCULATE(
     SUM(fStocks[Quantités]),
     FILTER(
