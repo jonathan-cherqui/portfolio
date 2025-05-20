@@ -52,7 +52,7 @@ Je pilote les projets data au sein d’un réseau d'environ 80 magasins de vélo
 
 
 ## Projects
-abc
+👉 [Voir mon projet Power BI](./portfolio-powerbi-sales-stocks/)
 
 ## Education
 Business School, Master
