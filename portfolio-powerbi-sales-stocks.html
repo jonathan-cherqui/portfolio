@@ -80,6 +80,131 @@ permalink: /portfolio-powerbi-sales-stocks/
 <li>Certains produits ont un stock élevé mais génèrent peu de revenus (ex : Chemise, Jupe midi)</li>
 </ul>
 
+
+  <h2>Principales mesures DAX utilisées</h2>
+
+  <div style="position: relative; margin-bottom: 1em;">
+    <button onclick="copyCode(this)" style="
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: #444;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 0.9em;
+        border-radius: 5px;
+    ">
+      Copier
+    </button>
+    <pre style="
+      background-color: #1e1e1e;
+      color: #f8f8f2;
+      padding: 1em;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+    "><code>
+Poids sur revenue total = DIVIDE(
+    SUM(fSales[Revenue]), // Revenu dans le contexte saisie
+    CALCULATE(
+    SUM(fSales[Revenue]),
+    ALL(dStore[Name])), // Revenu total
+    BLANK()
+)
+    </code></pre>
+  </div>
+
+ <div style="position: relative; margin-bottom: 1em;">
+    <button onclick="copyCode(this)" style="
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: #444;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 0.9em;
+        border-radius: 5px;
+    ">
+      Copier
+    </button>
+    <pre style="
+      background-color: #1e1e1e;
+      color: #f8f8f2;
+      padding: 1em;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+    "><code>
+Couverture stock = 
+
+//Moyenne des quantités vendues au cours des 12 deniers mois, de la date maximale sélectionnée
+VAR _QteMoyVentes12Mois = CALCULATE(
+    SUM(fSales[Quantités]),
+    DATESINPERIOD(
+        fSales[SalesDate],
+        MAX(fSales[SalesDate]),
+        -12,
+        MONTH
+    )
+) / 12
+
+//Quantités en stock à date
+VAR _QteStock = CALCULATE(
+    SUM(fStocks[Quantités])
+)
+
+//Rapport entre quantités en stock à date et ventes mensuelles moyennes 
+VAR _Couverture = DIVIDE(
+    _QteStock,
+    _QteMoyVentes12Mois,
+    BLANK()
+)
+
+RETURN _Couverture
+    </code></pre>
+  </div>
+
+
+  <div style="position: relative; margin-bottom: 1em;">
+    <button onclick="copyCode(this)" style="
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: #444;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 0.9em;
+        border-radius: 5px;
+    ">
+      Copier
+    </button>
+    <pre style="
+      background-color: #1e1e1e;
+      color: #f8f8f2;
+      padding: 1em;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+    "><code>
+Qte surstock = CALCULATE(
+    SUM(fStocks[Quantités]),
+    FILTER(
+        ALLSELECTED(fStocks),
+        [Couverture stock] > 8
+    )
+)
+    </code></pre>
+  </div>
+
+  <p>
+
+
 <p>
 <a href="/portfolio/">← Retour au Portfolio</a>
 </p>
