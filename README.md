@@ -52,8 +52,11 @@ Je pilote les projets data au sein d’un réseau d'environ 80 magasins de vélo
 
 
 ## Projects
-👉 [Analyse des ventes & stocks retail textile - Power BI](./portfolio-powerbi-sales-stocks/)
+👉 [Analyse des ventes & stocks retail textile - Power BI](./project-powerbi-sales-stocks/)
 ![power-bi-report-preview](assets/img/power_bi-report-preview.png)
+
+👉 [Sales analysis for Superstore - Excel](./project-excel-sales-analysis/)
+![power-bi-report-preview](assets/img/excel-report-preview.png)
 
 ## Education
 Business School, Master
