@@ -208,3 +208,13 @@ Qte surstock = CALCULATE(
 <p>
 <a href="/portfolio/">← Retour au Portfolio</a>
 </p>
+
+<script>
+  function copyCode(button) {
+    const code = button.nextElementSibling.innerText;
+    navigator.clipboard.writeText(code).then(() => {
+      button.innerText = "Copié !";
+      setTimeout(() => button.innerText = "Copier", 2000);
+    });
+  }
+</script>
