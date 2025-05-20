@@ -1,14 +1,35 @@
+---
+layout: default
+title: Analyse des ventes & stocks retail textile - Power BI
+permalink: /project-powerbi-sales-stocks/
+---
 
-# Sales analysis for Superstore - Excel
+<h1>Sales analysis for Superstore - Excel</h1>
 
-## Objectives :
-- Determine the best-selling products, items, and geographic areas
-- Analyze the distribution of customer types
-- Analyze the distribution of delivery providers
+<h2>Objectives :</h2>
+<ul>
+<li>Determine the best-selling products, items, and geographic areas</li>
+<li>Analyze the distribution of customer types</li>
+<li>Analyze the distribution of delivery providers</li>
+</ul>
+<h2>Context :</h2>
+<ul>
+<li>Create an interactive Excel file that easily shows the metrics</li>
+</ul>
+<a href="assets/files/superstore-us-2024.xlsx" download>Download Excel file</a>
+<img src="assets/img/excel-report-preview.png" alt="report preview" width="300" />
 
-## Context :
-- Create an interactive Excel file that easily shows the metrics
 
-[Download Excel file](./assets/files/superstore-us-2024.xlsx)
+<p>
+<a href="/portfolio/">← Retour au Portfolio</a>
+</p>
 
-![report preview](assets/img/excel-report-preview.png)
+<script>
+  function copyCode(button) {
+    const code = button.nextElementSibling.innerText;
+    navigator.clipboard.writeText(code).then(() => {
+      button.innerText = "Copié !";
+      setTimeout(() => button.innerText = "Copier", 2000);
+    });
+  }
+</script>
