@@ -55,7 +55,7 @@ Je pilote les projets data au sein d’un réseau d'environ 80 magasins de vélo
 👉 [Analyse des ventes & stocks retail textile - Power BI](./project-powerbi-sales-stocks/)
 ![power-bi-report-preview](assets/img/power_bi-report-preview.png)
 
-👉 [Sales dashboard Superstore - Excel](./project-excel-sales-dashboard/)
+👉 [Sales dashboard Superstore - Excel](project-excel-sales-dashboard.html)
 ![excel-report-preview](assets/img/excel-report-preview.png)
 
 
