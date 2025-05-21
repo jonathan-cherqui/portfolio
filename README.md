@@ -60,5 +60,5 @@ Je pilote les projets data au sein d’un réseau d'environ 80 magasins de vélo
 
 
 ## Education
-Toulouse Business School, Master's degree in Marketing & Communication
-Creteil University, Bachelor's degree in Economics
+- Toulouse Business School, Master's degree in Marketing & Communication
+- Creteil University, Bachelor's degree in Economics
