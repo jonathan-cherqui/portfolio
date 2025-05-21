@@ -9,12 +9,13 @@ permalink: /project-powerbi-sales-stocks/
 <p>
 <h2>Contexte :</h2>
 <ul>
+<li>Pour un réseau de 80 boutiques dans le secteur du prêt à porter textile en France</li>
 <li>Créer un rapport sur Power BI pour analyser les performances du réseau</li>
 <li>Publier et partager ce rapport avec la direction commerciale du réseau</li>
 </ul>
 <h2>Objectifs :</h2>
 <ul> 
-<li>Pour un réseau de 80 boutiques dans le secteur du prêt à porter textile en France, analyser les performances de ventes et stocks sur l'année </li>
+<li>Analyser les performances de ventes et stocks sur l'année </li>
 <li>Quelles sont les grandes tendances du réseau ?</li>
 <li>Quels sont les grands enseignements à en tirer </li>
 <li>Quelles boutiques performent mieux en termes de ventes et de gestion de leur stocks ?</li>
@@ -55,7 +56,7 @@ permalink: /project-powerbi-sales-stocks/
   frameborder="0" 
   allowFullScreen="true">
 </iframe>
-
+<p>
 <h2>Principaux apprentissages - ventes :</h2>
 
 <ul>
@@ -66,7 +67,8 @@ permalink: /project-powerbi-sales-stocks/
 <li>Revenu stable sur la période </li>
 <li>Bon positionnement produit</li>
 </ul>
-
+</p>
+<p>
 <h2>Principaux apprentissages - stocks :</h2>
 
 <ul>
@@ -79,8 +81,74 @@ permalink: /project-powerbi-sales-stocks/
 <li>Vesti, StyleBox et Texline = plus fortes valeurs de stock</li>
 <li>Certains produits ont un stock élevé mais génèrent peu de revenus (ex : Chemise, Jupe midi)</li>
 </ul>
+</p>
 
+<p>
+  <h2>Source des données</h2>
+  Les données sont issues de tables réelles sur lesquelles j'ai pu travailler dans le cadre professionnel.<br/>
+  Les données de toutes les tables ont été totalement modifiées (secteur d'activité, marques, montants etc.) et anonymisées.
+</p>
 
+<p>
+  <h2>Modèle de données</h2>
+5 tables : 
+<ul>
+  <li>Table des établissements : dStore (dimensions)</li>
+  <li>Table des articles : dArticles (dimensions)</li>
+  <li>Table de calendrier : dCalendar (dimensions)</li>
+  <li>Table des ventes : fSales (facts)</li>
+  <li>Table des stocks : fStocks (facts)</li>
+</ul>
+<i>NB : fStocks n'est pas liée à dCalendar car par souci d'optimisation des volumes données, ne sont prises en compte que les valeurs stocks à date.</i>
+
+<img src="/portfolio/assets/img/modele-de-donnees-PBI.png" alt="modele de donnees">
+</p>
+
+<p>
+  <h2>Transformation des données</h2>
+
+<ul>
+  <li>Les données sont hébergées au format .csv sur un répertoire Sharepoint</li>
+  <li>Les données de la table fStocks sont chargées via requête SQL pour optimiser les volumes</li>
+  <li>Les données sont transformées dans Power Query pour ne garder que les champs et dates pertinentes au respect du cahier des charges</li>
+
+  <div style="position: relative; margin-bottom: 1em;">
+  <button onclick="copyCode(this)" style="
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: #f0f0f0;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 0.9em;
+      border-radius: 5px;
+  ">
+    Copier
+  </button>
+  <pre style="
+    background-color: #fdfdfd;
+    color: #222;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+  "><code>
+fStock = 
+    SELECT
+      *
+    FROM
+      fStock
+    WHERE
+      CAST(StockDate AS DATE) IN (CAST(GETDATE() AS DATE);
+    </code></pre>
+  </div>
+
+</p>
+
+<p>
   <h2>Principales mesures DAX utilisées</h2>
 
   <div style="position: relative; margin-bottom: 1em;">
@@ -204,7 +272,7 @@ Qte surstock = CALCULATE(
 )
     </code></pre>
   </div>
-
+</p>
   <p>
 
 
