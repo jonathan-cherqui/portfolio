@@ -1,3 +1,8 @@
+---
+layout: default
+title: Sales Dashboard (Excel)
+---
+
 # Sales analysis for Superstore - Excel
 
 ## Objectives :
@@ -8,9 +13,9 @@
 
 ## Analyse des ventes
 
-  <a href="assets/files/superstore-us-2024.xlsx" download>
-    Télécharger le fichier Excel
-  </a>
+<a href="assets/files/superstore-us-2024.xlsx" download>
+  Télécharger le fichier Excel
+</a>
 
 ## Prévisualisation
 ![report preview](assets/img/excel-report-preview.png)
