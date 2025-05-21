@@ -59,6 +59,6 @@ Je pilote les projets data au sein d’un réseau d'environ 80 magasins de vélo
 ![excel-report-preview](assets/img/excel-report-preview.png)
 
 
-[test](./project/test/)
 ## Education
-Business School, Master
+Toulouse Business School, Master's degree in Marketing & Communication
+Creteil University, Bachelor's degree in Economics
