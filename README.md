@@ -58,5 +58,7 @@ Je pilote les projets data au sein d’un réseau d'environ 80 magasins de vélo
 👉 [Sales analysis for Superstore - Excel](./project-excel-sales-analysis/)
 ![power-bi-report-preview](assets/img/excel-report-preview.png)
 
+
+[test](./project/test/)
 ## Education
 Business School, Master
